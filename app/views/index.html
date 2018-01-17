@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+                <p class="heading-secondary top_30 bottom_0">ATCM-2539</p>
+                <h1 class="heading-xlarge top_0">Find a case search filters
+                <span class="heading-secondary">This demo uses the GOV.UK prototype kit {{releaseVersion}}</span>
+            </h1>{{releaseVersion | log }}
+
+            <div class="notice">
+                <i class="icon icon-important">
+                    <span class="visually-hidden">Warning</span>
+                </i>
+
+                <strong class="bold-small top_60 bottom_60">
+                    <p class="bold bottom_5 heading-medium" style="color: #B10E1E">DO NOT USE AS A DESIGN OR DEVELOPMENT REFERENCE.</p>
+                    <p class="top_5" style="color: #B10E1E">This demo is for user testing and basic demo purposes only and may not represent the final approved designs.</p>
+                </strong>
+            </div>
+
+            <a class="button button-start bottom_60" href="page-1.html" role="button">Start now</a>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}
+
+
