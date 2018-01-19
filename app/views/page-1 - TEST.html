@@ -111,6 +111,60 @@
         </div>
     </div>
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            
+    <style>
+        input#rock:checked ~ table tbody tr.rock {display: table-row}
+
+        input#gas:checked ~ table tbody tr.gas {display: table-row}
+
+        input#ice:checked ~ table tbody tr.ice {display: table-row}
+
+        input:checked ~ table tbody tr {display:none}
+        
+    </style>
+
+    <div class="grid-row">
+        <div class="column-one-third">
+            
+          <input class="multiple-choice-2" type="checkbox" id="rock"><label style="font-size:14px"> Rock</label>
+            
+            <input class="multiple-choice-2" type="checkbox" id="gas"><label style="font-size:14px"> Gas</label>
+            
+            <input class="multiple-choice-2" type="checkbox" id="ice"><label style="font-size:14px"> Ice</label>
+        </div>
+        <div class="column-two-thirds">
+            {% include "includes/case-list-test.html" %}
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-full top_30 bottom_30">
+            <hr>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
     <div class="grid-row">
 
         <div class="column-one-third">
