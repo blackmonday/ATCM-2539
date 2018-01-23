@@ -99,7 +99,7 @@
             <input class="form-control form-control-3-4" id="full-name-f1" type="text" name="full-name-f1" value="Smith"><button type="submit"><i class="fa fa-search" style="margin-top: 2px"></i></button>
             <div class="panel panel-border-wide top_15" style="padding-top: 10px; padding-bottom: 5px">
                 <p>
-                    7 cases found
+                    14 cases found
                 </p>
             </div>
         </div>
@@ -122,19 +122,19 @@
                     <form>
                         <fieldset>
                             <div class="multiple-choice">
-                                <input id="case-status-1" name="case-status" type="checkbox" value="Completed" checked="checked" onclick="showHideCaseStatus('row-1');showHideCaseStatus('row-3');showHideCaseStatus('row-4');">
+                                <input id="case-status-1" name="case-status" type="checkbox" value="Completed" checked="checked" onclick="hideCompleted();">
                                 <label for="case-status-1">Completed (3)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-2" name="case-status" type="checkbox" value="No plea received" checked="checked" onclick="showHideCaseStatus('row-2');showHideCaseStatus('row-5');">
-                                <label for="case-status-2">No plea received (2)</label>
+                                <input id="case-status-2" name="case-status" type="checkbox" value="No plea received" checked="checked" onclick="hideNoPleaReceived();">
+                                <label for="case-status-2">No plea received (7)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-3" name="case-status" type="checkbox" value="Plea received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-6');">
-                                <label for="case-status-3">Plea received - ready for decision (1)</label>
+                                <input id="case-status-3" name="case-status" type="checkbox" value="Plea received - ready for decision" checked="checked" onclick="hidePleaReceived();">
+                                <label for="case-status-3">Plea received - ready for decision (3)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-4" name="case-status" type="checkbox" value="Withdrawal received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-7');">
+                                <input id="case-status-4" name="case-status" type="checkbox" value="Withdrawal received - ready for decision" checked="checked" onclick="hideWithdrawal();">
                                 <label for="case-status-4">Withdrawal received - ready for decision (1)</label>
                             </div>
                         </fieldset>
@@ -148,16 +148,16 @@
                     <form>
                         <fieldset>
                             <div class="multiple-choice">
-                                <input id="prosecutor-1" name="prosecutor" type="checkbox" value="Completed" checked="checked" onclick="showHideProsecutor('row-1');showHideProsecutor('row-2');">
-                                <label for="prosecutor-1">TV Licensing (2)</label>
+                                <input id="prosecutor-1" name="prosecutor" type="checkbox" value="Completed" checked="checked" onclick="hideTVL();">
+                                <label for="prosecutor-1">TV Licensing (6)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="prosecutor-2" name="prosecutor" type="checkbox" value="Transport for London" checked="checked" onclick="showHideProsecutor('row-4');showHideProsecutor('row-5');showHideProsecutor('row-7');">
-                                <label for="prosecutor-2">Transport for London (3)</label>
+                                <input id="prosecutor-2" name="prosecutor" type="checkbox" value="Transport for London" checked="checked" onclick="hideTFL();">
+                                <label for="prosecutor-2">Transport for London (5)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="prosecutor-3" name="prosecutor" type="checkbox" value="Driver & Vehicle Licensing Agency" checked="checked" onclick="showHideProsecutor('row-3');showHideProsecutor('row-6');">
-                                <label for="prosecutor-3">Driver &amp; Vehicle Licensing Agency (2)</label>
+                                <input id="prosecutor-3" name="prosecutor" type="checkbox" value="Driver & Vehicle Licensing Agency" checked="checked" onclick="hideDVLA();">
+                                <label for="prosecutor-3">Driver &amp; Vehicle Licensing Agency (3)</label>
                             </div>
                             
                         </fieldset>
@@ -228,21 +228,62 @@
             
             <!-- SHOW/HIDE CASE STATUS -->
             <script>
-                function showHideCaseStatus(rowId) {
-                    if (document.getElementById(rowId).style.display == "none") {
-                        document.getElementById(rowId).style.display = "table-row";
-                    } else if (document.getElementById(rowId).style.display != "none") {
-                        document.getElementById(rowId).style.display = "none";
+                function hideCompleted() {
+                    /* SHOW/HIDE 1 */
+                    if (document.getElementById("completed-1").hidden == true) {
+                        document.getElementById("completed-1").hidden = false;
+                    } else {
+                        document.getElementById("completed-1").hidden = true;
                     }
-                }
-
-                function showHideProsecutor(rowId) {
-                    if (document.getElementById(rowId).style.display == "none") {
-                        document.getElementById(rowId).style.display = "table-row";
-                    } else if (document.getElementById(rowId).style.display != "none") {
-                        document.getElementById(rowId).style.display = "none";
+                    /* SHOW/HIDE 2 */
+                    if (document.getElementById("completed-2").hidden == true) {
+                        document.getElementById("completed-2").hidden = false;
+                    } else {
+                        document.getElementById("completed-2").hidden = true;
                     }
-                }
+                    /* SHOW/HIDE 3 */
+                    if (document.getElementById("completed-3").hidden == true) {
+                        document.getElementById("completed-3").hidden = false;
+                    } else {
+                        document.getElementById("completed-3").hidden = true;
+                    }
+                } 
+            </script>
+            <script>
+                function hideNoPleaReceived() {
+                    /* SHOW/HIDE 1 */
+                    if (document.getElementById("no-plea-received-1").hidden == true) {
+                        document.getElementById("no-plea-received-1").hidden = false;
+                    } else {
+                        document.getElementById("no-plea-received-1").hidden = true;
+                    }
+                    /* SHOW/HIDE 2 */
+                    if (document.getElementById("no-plea-received-2").hidden == true) {
+                        document.getElementById("no-plea-received-2").hidden = false;
+                    } else {
+                        document.getElementById("no-plea-received-2").hidden = true;
+                    }
+                } 
+            </script>
+            <script>
+                function hidePleaReceived() {
+                    /* SHOW/HIDE 1 */
+                    if (document.getElementById("plea-received-1").hidden == true) {
+                        document.getElementById("plea-received-1").hidden = false;
+                    } else {
+                        document.getElementById("plea-received-1").hidden = true;
+                    }
+                } 
+            </script>
+            <script>
+                function hideWithdrawal() {
+                    /* SHOW/HIDE 1 */
+                    if (document.getElementById("withdrawal-1").hidden == true) {
+                        document.getElementById("withdrawal-1").hidden = false;
+                    } else {
+                        document.getElementById("withdrawal-1").hidden = true;
+                    }
+                } 
             </script>        
           
         </div>
