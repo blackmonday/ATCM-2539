@@ -111,3 +111,18 @@ $('input[name="deduct-from-benefits-group"]').on('change', function() {
       .toggle(+this.value === 2 && this.checked);
 }).change();
 
+
+// ********
+// Filters
+//
+$('#button1').click(function() {
+    //$('.case-list tr#row-1').toggle();
+    
+    var caseStatus = $('.case-list tr#row-1 td.status').value;
+    if ( caseStatus === "Completed") {
+    }
+});
+
+$('#button1and2').click(function() {
+    $('.case-list tr#row-1, .case-list tr#row-2').toggle();
+});

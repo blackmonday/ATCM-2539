@@ -8,80 +8,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-    .search-container button {
-      padding: 8px 11px 7px 11px;
-      margin-left: -1px;
-      /*margin-top: 8px;
-      margin-right: 16px;*/
-      background: #005EA5;
-      color: #fff;
-      font-size: 17px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .search-container button:hover {
-      background: #2B8CC4;
-    }
-    
-    .multiple-choice {
-        padding: 0 0 0 20px;
-    }
-    
-    .multiple-choice label {
-        font-size: 14px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-    
-    .multiple-choice [type=checkbox] + label::before {
-        content: "";
-        border: 2px solid;
-        background: transparent;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .multiple-choice [type=checkbox] + label::after {
-        content: "";
-        border: solid;
-        border-width: 0 0 4px 4px;
-        background: transparent;
-        border-top-color: transparent;
-        width: 9px;
-        height: 4px;
-        position: absolute;
-        top: 7px;
-        left: 6px;
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        zoom: 1;
-        filter: alpha(opacity=0);
-        opacity: 0;
-    }
-    
-    .date-range-picker p, .date-range-picker label {
-        font-size: 14px;
-    }
-    
-    .summary {
-        font-size: 14px;
-    }
-    
-    .panel {
-        padding-top: 15px;
-        padding-bottom: 0;
-    }
-
-</style>
-
 <main id="content" role="main">
     
     {% include "includes/phase_banner_alpha.html" %}
@@ -89,7 +15,8 @@
             
     <div class="grid-row">
         <div class="column-two-thirds">
-            <h1 class="heading-xlarge bottom_30">Search for a case</h1>
+            <h1 class="heading-xlarge bottom_0">Search for a case</h1>
+            <h2 class="heading-small top_10 bottom_30 form-hint">Variation 1</h2>
         </div>
     </div>
 
@@ -243,7 +170,7 @@
                         document.getElementById(rowId).style.display = "none";
                     }
                 }
-            </script>        
+            </script> 
           
         </div>
 
