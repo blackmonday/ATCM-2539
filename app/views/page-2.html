@@ -26,7 +26,7 @@
             <input class="form-control form-control-3-4" id="full-name-f1" type="text" name="full-name-f1" value="Smith"><button type="submit"><i class="fa fa-search" style="margin-top: 2px"></i></button>
             <div class="panel panel-border-wide top_15" style="padding-top: 10px; padding-bottom: 5px">
                 <p>
-                    7 cases found
+                    14 cases found
                 </p>
             </div>
         </div>
@@ -53,16 +53,16 @@
                                 <label for="case-status-1">Completed (3)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-2" name="case-status" type="checkbox" value="No plea received" checked="checked" onclick="showHideCaseStatus('row-2');showHideCaseStatus('row-5');">
-                                <label for="case-status-2">No plea received (2)</label>
+                                <input id="case-status-2" name="case-status" type="checkbox" value="No plea received" checked="checked" onclick="showHideCaseStatus('row-2');showHideCaseStatus('row-8');showHideCaseStatus('row-5');showHideCaseStatus('row-11');showHideCaseStatus('row-12');showHideCaseStatus('row-14');">
+                                <label for="case-status-2">No plea received (6)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-3" name="case-status" type="checkbox" value="Plea received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-6');">
-                                <label for="case-status-3">Plea received - ready for decision (1)</label>
+                                <input id="case-status-3" name="case-status" type="checkbox" value="Plea received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-6');showHideCaseStatus('row-9');showHideCaseStatus('row-10');">
+                                <label for="case-status-3">Plea received - ready for decision (3)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-4" name="case-status" type="checkbox" value="Withdrawal received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-7');">
-                                <label for="case-status-4">Withdrawal received - ready for decision (1)</label>
+                                <input id="case-status-4" name="case-status" type="checkbox" value="Withdrawal received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-7');showHideCaseStatus('row-13');">
+                                <label for="case-status-4">Withdrawal received - ready for decision (2)</label>
                             </div>
                         </fieldset>
                     </form>
@@ -73,22 +73,17 @@
                         <fieldset>
                             <p class="bold">Prosecutor</p>
                             <div class="multiple-choice">
-                                <input id="case-status-1" name="case-status" type="checkbox" value="Completed" checked="checked" onclick="showHideCaseStatus('row-1');showHideCaseStatus('row-3');showHideCaseStatus('row-4');">
-                                <label for="case-status-1">Completed (3)</label>
+                                <input id="prosecutor-1" name="prosecutor" type="checkbox" value="Completed" checked="checked" onclick="showHideProsecutor('row-2');showHideProsecutor('row-8');showHideProsecutor('row-14');">
+                                <label for="prosecutor-1">TV Licensing (3)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-2" name="case-status" type="checkbox" value="No plea received" checked="checked" onclick="showHideCaseStatus('row-2');showHideCaseStatus('row-5');">
-                                <label for="case-status-2">No plea received (2)</label>
+                                <input id="prosecutor-2" name="prosecutor" type="checkbox" value="Transport for London" checked="checked" onclick="showHideProsecutor('row-1');showHideProsecutor('row-4');showHideProsecutor('row-5');showHideProsecutor('row-7');showHideProsecutor('row-11');showHideProsecutor('row-12');showHideProsecutor('row-13');">
+                                <label for="prosecutor-2">Transport for London (7)</label>
                             </div>
                             <div class="multiple-choice">
-                                <input id="case-status-3" name="case-status" type="checkbox" value="Plea received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-6');">
-                                <label for="case-status-3">Plea received - ready for decision (1)</label>
+                                <input id="prosecutor-3" name="prosecutor" type="checkbox" value="Driver & Vehicle Licensing Agency" checked="checked" onclick="showHideProsecutor('row-3');showHideProsecutor('row-6');showHideProsecutor('row-9');showHideProsecutor('row-10');">
+                                <label for="prosecutor-3">Driver &amp; Vehicle Licensing Agency (4)</label>
                             </div>
-                            <div class="multiple-choice">
-                                <input id="case-status-4" name="case-status" type="checkbox" value="Withdrawal received - ready for decision" checked="checked" onclick="showHideCaseStatus('row-7');">
-                                <label for="case-status-4">Withdrawal received - ready for decision (1)</label>
-                            </div>
-
                         </fieldset>
                     </form>
                 </div>
